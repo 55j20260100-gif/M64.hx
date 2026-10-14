@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<title>Mario64-like (Haxe)</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+  html, body { margin: 0; height: 100%; overflow: hidden; background: #7ec8ff; font-family: sans-serif; }
+  canvas { display: block; }
+  #hud { position: fixed; top: 12px; left: 16px; color: #fff; font-size: 22px; font-weight: bold;
+         text-shadow: 2px 2px 0 #000; pointer-events: none; }
+  #help { position: fixed; bottom: 12px; left: 16px; color: #fff; font-size: 13px;
+          text-shadow: 1px 1px 0 #000; pointer-events: none; line-height: 1.5; }
+  #msg { position: fixed; top: 40%; width: 100%; text-align: center; color: #ffd700; font-size: 56px;
+         font-weight: bold; text-shadow: 4px 4px 0 #000; pointer-events: none; }
+</style>
+</head>
+<body>
+<div id="hud"></div>
+<div id="msg"></div>
+<div id="help">
+  WASD: 移動 / Space: ジャンプ(連続で2段・3段) / C か Shift: ヒップドロップ(空中)<br>
+  Q・E か ←→: カメラ回転 / 右ドラッグ…ではなくマウスドラッグ: カメラ回転 / ↑↓: 前後移動
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+<script src="game.js"></script>
+</body>
+</html>
